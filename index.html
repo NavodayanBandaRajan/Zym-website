@@ -1,0 +1,1263 @@
+<html>
+  <head>
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+      <!--font awesome-->
+      <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title> Zym wb </title>
+    
+    <style>
+      /* SMOOTH SCROLL */
+html{
+  scroll-behavior: smooth;
+}
+
+/* BODY */
+body{
+  margin:0;
+  padding:0;
+  font-family: Arial, sans-serif;
+  background:#111;
+  color:white;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px;
+  background:black;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo h2{
+  color:red;
+}
+
+.nav a{
+  color:white;
+  text-decoration:none;
+  margin:10px;
+  transition:0.3s;
+}
+
+.nav a:hover{
+  color:red;
+}
+section{
+  overflow: hidden;
+}
+
+/* HERO SECTION */
+.hero{
+  text-align:center;
+  padding:100px 20px;
+  background:linear-gradient(rgba(0,0,0,0.7),
+  rgba(0,0,0,0.7)),
+  url("https://picsum.photos/1200/700") center/cover;
+  margin-top: 30px;
+}
+
+.hero h1{
+  font-size:60px;
+  color:red;
+}
+
+.hero h2{
+  font-size:40px;
+}
+
+.description{
+  max-width:700px;
+  margin:auto;
+}
+
+/* BUTTONS */
+.buttons button{
+  padding:15px 30px;
+  margin:10px;
+  border:none;
+  border-radius:30px;
+  background:red;
+  color:white;
+  cursor:pointer;
+  font-size:18px;
+  transition:0.3s;
+}
+
+.buttons button:hover{
+  background:white;
+  color:red;
+  transform:scale(1.05);
+}
+
+/* FEATURES */
+.features{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  margin-top:50px;
+}
+
+.feature-box{
+  background:#222;
+  padding:20px;
+  width:250px;
+  border-radius:20px;
+  border:2px solid red;
+  transition:0.3s;
+}
+
+.feature-box:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 20px red;
+}
+
+/* GENERAL SECTION */
+section{
+  padding:80px 20px;
+}
+
+h2{
+  text-align:center;
+  color:red;
+  margin-bottom:20px;
+}
+
+/* ABOUT */
+.about-container,
+.membership-features,
+.services-cards,
+.our-trainers{
+  max-width:900px;
+  margin:auto;
+  margin-top: 30px;
+}
+
+
+.about{
+  text-align: center;
+}
+
+.about-highliths-card{
+  background:#222;
+  padding:20px;
+  border-radius:20px;
+  width:270px;
+  border:2px solid red;
+  transition:0.3s;
+}
+
+.about-highliths-card:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 20px red;
+}
+
+.about-experience-card{
+  background:#222;
+  padding:20px;
+  border-radius:20px;
+  width:270px;
+  border:2px solid red;
+  transition:0.3s;
+}
+
+.about-experience-card:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 20px red;
+}
+
+.membership{
+  text-align: center;
+}
+
+.membership-features{
+   background:#222;
+  padding:20px;
+  border-radius:20px;
+  width:270px;
+  border:2px solid red;
+  transition:0.3s;
+}
+
+.membership-features:hover{
+  
+transform:scale(1.05);
+  box-shadow:0 0 20px red;
+}
+/* PLAN CARDS */
+.plan-card{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
+.basic-plan{
+  background:#222;
+  padding:20px;
+  border-radius:20px;
+  width:270px;
+  border:2px solid red;
+  transition:0.3s;
+}
+
+.basic-plan:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 20px red;
+}
+
+.basic-plan button{
+  padding:12px 25px;
+  border:none;
+  background:red;
+  color:white;
+  border-radius:20px;
+  cursor:pointer;
+}
+
+/* SERVICES */
+.services-card{
+  background:#222;
+  padding:20px;
+  margin:20px 0;
+  border-left:5px solid red;
+  border-radius:10px;
+}
+
+/* TRAINERS */
+.trainer{
+  background:#222;
+  padding:20px;
+  border-radius:20px;
+  margin-bottom:20px;
+  border:2px solid red;
+  margin-top: 33px;
+}
+
+.trainer-short-desciption{
+  border:2px solid red;
+  color: white;
+  border-radius:20px;
+  margin: auto;
+  padding: 6px;
+}
+
+.trainer img{
+  width:100%;
+  max-width:300px;
+  border-radius:20px;
+}
+
+/* GALLERY */
+.gallery-container{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:center;
+}
+
+.gallery-container img{
+  width:300px;
+  height:220px;
+  object-fit:cover;
+  border-radius:20px;
+  cursor:pointer;
+  transition:0.4s;
+  border:3px solid red;
+}
+
+.gallery-container img:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 20px red;
+}
+
+/* LIGHTBOX */
+#lightbox{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+}
+
+#lightbox-img{
+  width:90%;
+  max-width:900px;
+  border-radius:20px;
+}
+
+#close-btn{
+  position:absolute;
+  top:20px;
+  right:40px;
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+}
+
+/* CONTACT FORM */
+.contact-form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  max-width:500px;
+  margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding:15px;
+  border:none;
+  border-radius:10px;
+  outline:none;
+}
+
+.contact-form button{
+  padding:15px;
+  border:none;
+  background:red;
+  color:white;
+  border-radius:20px;
+  cursor:pointer;
+}
+
+/* MAP */
+.map-box{
+  margin-top:30px;
+}
+
+/* FOOTER */
+.footer{
+  background:black;
+  text-align:center;
+}
+
+.quick-links a{
+  color:white;
+  text-decoration:none;
+  margin:10px;
+}
+
+.media-icons i{
+  font-size:30px;
+  margin:15px;
+  color:white;
+  transition:0.3s;
+}
+
+.media-icons i:hover{
+  color:red;
+  transform:scale(1.2);
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+  }
+
+  .nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .hero h1{
+    font-size:40px;
+  }
+
+  .hero h2{
+    font-size:28px;
+  }
+
+  .features{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .plan-card{
+    flex-direction:column;
+    align-items:center;
+  }
+
+}
+
+/* SERVICES SECTION */
+
+.services{
+  background:#111;
+  color:white;
+}
+
+.services-heading h2{
+  text-align:center;
+  color:red;
+  font-size:40px;
+}
+
+.services-description{
+  text-align:center;
+  max-width:800px;
+  margin:auto;
+  margin-bottom:40px;
+}
+
+.services-cards{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.services-card{
+  background:#222;
+  padding:20px;
+  border-left:5px solid red;
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.services-card:hover{
+  transform:translateX(10px);
+  box-shadow:0 0 20px red;
+}
+
+
+/* TRAINERS SECTION */
+
+.trainers{
+  background:#181818;
+  color:white;
+}
+
+.trainers-heading h2{
+  text-align:center;
+  color:red;
+  font-size:40px;
+}
+
+.trainers-description{
+  text-align:center;
+  max-width:800px;
+  margin:auto;
+  margin-bottom:40px;
+}
+
+.our-trainers{
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+}
+
+.trainer{
+  background:#222;
+  padding:20px;
+  border-radius:20px;
+  border:2px solid red;
+  transition:0.3s;
+}
+
+.trainer:hover{
+  transform:scale(1.02);
+  box-shadow:0 0 20px red;
+}
+
+.trainer img{
+  width:100%;
+  max-width:300px;
+  border-radius:20px;
+  margin-bottom:20px;
+}
+
+
+/* GALLERY SECTION */
+
+.gallery{
+  background:#111;
+  color:white;
+}
+
+.gallery-heading{
+  text-align:center;
+  color:red;
+  font-size:40px;
+  margin-bottom:40px;
+}
+
+.gallery-container{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:center;
+}
+
+.gallery-container img{
+  width:300px;
+  height:220px;
+  object-fit:cover;
+  border-radius:20px;
+  border:3px solid red;
+  cursor:pointer;
+  transition:0.4s;
+}
+
+.gallery-container img:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 20px red;
+}
+
+
+/* LIGHTBOX */
+
+#lightbox{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+
+  display:none;
+
+  justify-content:center;
+  align-items:center;
+
+  z-index:999;
+}
+
+#lightbox-img{
+  width:90%;
+  max-width:900px;
+  border-radius:20px;
+}
+
+#close-btn{
+  position:absolute;
+  top:20px;
+  right:40px;
+
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+}
+
+
+/* CONTACT SECTION */
+
+.contact{
+  background:#181818;
+  color:white;
+}
+
+.contact-heading h2{
+  text-align:center;
+  color:red;
+  font-size:40px;
+}
+
+.contact-description{
+  text-align:center;
+  max-width:700px;
+  margin:auto;
+  margin-bottom:30px;
+}
+
+.contact-info{
+  max-width:700px;
+  margin:auto;
+  background:#222;
+  padding:20px;
+  border-radius:20px;
+  border:2px solid red;
+}
+
+.contact-form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+
+  max-width:500px;
+  margin:40px auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding:15px;
+  border:none;
+  border-radius:10px;
+  outline:none;
+}
+
+.contact-form textarea{
+  height:120px;
+}
+
+.contact-form button{
+  padding:15px;
+  border:none;
+  border-radius:30px;
+
+  background:red;
+  color:white;
+
+  font-size:18px;
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.contact-form button:hover{
+  background:white;
+  color:red;
+}
+
+
+/* MAP SECTION */
+
+.map{
+  background:#111;
+  color:white;
+}
+
+.map-heading h2{
+  text-align:center;
+  color:red;
+  font-size:40px;
+}
+
+.map-description{
+  text-align:center;
+  max-width:800px;
+  margin:auto;
+  margin-bottom:30px;
+}
+
+.map-box iframe{
+  width:100%;
+  border-radius:20px;
+}
+
+
+/* FOOTER SECTION */
+
+.footer{
+  background:black;
+  color:white;
+  text-align:center;
+  padding:50px 20px;
+}
+
+.footer-sub-heading h3{
+  color:red;
+  font-size:35px;
+}
+
+.footer-description{
+  max-width:700px;
+  margin:auto;
+  margin-bottom:30px;
+}
+
+.quick-links{
+  margin:30px 0;
+}
+
+.quick-links a{
+  color:white;
+  text-decoration:none;
+  margin:10px;
+
+  transition:0.3s;
+}
+
+.quick-links a:hover{
+  color:red;
+}
+
+.footer-contact-info{
+  max-width:700px;
+  margin:auto;
+}
+
+.media-icons{
+  margin-top:30px;
+}
+
+.media-icons i{
+  font-size:30px;
+  margin:15px;
+  color:white;
+
+  transition:0.3s;
+}
+
+.media-icons i:hover{
+  color:red;
+  transform:scale(1.2);
+}
+
+.copyright{
+  margin-top:30px;
+  border-top:1px solid gray;
+  padding-top:20px;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  .gallery-container img{
+    width:90%;
+  }
+
+  #lightbox-img{
+    width:95%;
+  }
+
+  .contact-form{
+    width:90%;
+  }
+
+}
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <h2>IRONY</h2>
+      </div>
+      <div class="nav">
+        <a href="#hero"> HOME </a>
+        <a href="#about"> ABOUT US </a>
+        <a href="#membership"> MEMBERSHIPS </a>
+        <a href="#services"> SERVICES </a>
+        <a href="#trainers"> TRAINERS </a>
+        <a href="#gallery"> GALLERY </a>
+        <a href="#contact"> CONTACT US </a> 
+        <a href="#map"> MAP </a>
+        <a href="#footer"> FOOTER </a> 
+      </div>
+    </div>
+    
+    <section class="hero" id="hero">
+      <div class="hero-heading">
+        <h1>IRON FITNESS GYM</h1>
+      </div>
+      <div class="hero-sub-heading">
+       <h2>Transform Your Body </h2>
+      </div>
+      <div class="description">
+        <p>
+          <b>
+    Join the best fitness gym with modern equipment,
+professional trainers and affordable membership plans.
+          </b>
+          </p>
+      </div>
+    
+    <div class="features">
+
+  <div class="feature-box">
+    <h3>24/7 Open</h3>
+    <p>
+      Workout anytime with our flexible gym timings.
+    </p>
+  </div>
+
+  <div class="feature-box">
+    <h3>Certified Trainers</h3>
+    <p>
+      Get guidance from professional fitness experts.
+    </p>
+  </div>
+
+  <div class="feature-box">
+    <h3>Modern Equipment</h3>
+    <p>
+      Train with advanced machines and quality equipment.
+    </p>
+  </div>
+
+</div>
+    
+    <div class="buttons">
+      
+      <a href="#membership">
+  <button type="button">Join Now</button>
+   </a>
+   <a href="#contact">
+  <button type="button">Contact Now</button>
+   </a>
+    </div>
+   </section>
+   
+   <section class="about" id="about">
+     <div class="about-heading">
+       <h2>About Us</h2>
+     </div>
+    
+    <h3> Description </h3>
+     <div class="about-description">
+       <p>
+       We are dedicated to helping you achieve your fitness goals with professional trainers, modern equipment and a motivating environment.
+       </p>
+     </div>
+     
+     <div class="about-container">
+     <h3> Our Mission </h3>
+     <div class="about-mission-cards">
+       <p>
+         Our mission is to build a healthier and stronger community through fitness and discipline.
+       </p>
+     </div>
+     
+     <h3> Highlights</h3>
+     <div class="about-highliths-card">
+       <p>
+         <ul>
+     <li> ✔ Certified Trainers</li>
+     <li>✔ Modern Equipment</li>
+      <li>✔ Affordable Membership</li>
+    <li>✔ Personal Training</li>
+     <li>✔ Friendly Environment</li>
+     <li>✔ Cardio & Strength Training</li>
+         </ul>
+       </p>
+     </div>
+     
+     <h3>Experience</h3>
+     <div class="about-experience-card">
+       <p>
+         <b>Trusted by Hundreds of Fitness Members</b>
+       </p>
+     </div>
+     </div>
+   </section>
+   
+   <section class="membership" id="membership">
+     <div class="membership-heading">
+       <h2>Membership Plans</h2>
+     </div>
+     
+     <h3> Description </h3>
+     <div class="membership-description">
+       <p>
+   At Iron Fitness Gym, we provide flexible and affordable membership plans designed for every fitness level. Whether you are a beginner starting your fitness journey or an experienced athlete looking to improve your strength and performance, we have the perfect plan for you.
+<br>
+<br>
+Our membership plans include access to modern gym equipment, cardio and strength training areas, professional trainers, locker facilities, and a motivating workout environment. Members can also enjoy personalized fitness guidance, diet support, and special training sessions.
+<br>
+<br>
+Choose a plan that fits your goals and start transforming your body, improving your health, and building confidence with us.
+       </p>
+     </div>
+     
+     <h3> Features </h3>
+     <div class="membership-features">
+       <p>
+         <ul>
+      <li> ✔ Affordable Membership Plans</li>
+       <li>✔ Professional Trainers</li>
+     <li>✔ Modern Fitness Equipment</li>
+    <li>✔ Personal Training Support</li>
+    <li>✔ Friendly Workout Environment</li>
+   <li>✔ Cardio & Strength Training</li>
+     <li>✔ Flexible Timings</li>
+         </ul>
+       </p>
+     </div>
+     
+     <h2> Membership Plans</h2>
+     <div class="plan-card">
+      
+      <br>
+      <div class="basic-plan">
+        <h3>Basic Plan</h3>
+      
+        <h1>₹999/<p> month</p></h1>
+        
+        <ul>
+    <li>Gym Access</li>
+    <li>Cardio Area</li>
+    <li>Locker Facility</li>
+  </ul>
+  <br>
+    <button>Join Now</button>
+      </div>
+      
+      <br>
+      <div class="basic-plan">
+        <h3>Standard Plan</h3>
+        
+        <h1>₹1999/<p> month</p></h1>
+        
+        <ul>
+    <li>Full Gym Access</li>
+    <li>Personal Trainer</li>
+    <li>Diet Guidance</li>
+    <li>Cardio & Strength Training</li>
+  </ul>
+  <br>
+    <button>Join Now</button>
+    </div>
+    <br>
+    <div class="basic-plan">
+        <h3>Premium Plan</h3>
+    
+        <h1>₹2999/<p> month</p></h1>
+      
+        <ul>
+    <li>All Facilities</li>
+    <li>Personal Coaching</li>
+    <li>Premium Equipment</li>
+    <li>Yoga Classes</li>
+    <li>Nutrition Support</li>
+  </ul>
+  
+    <button>Join Now</button>
+     </div>
+   </section>
+   
+   <section class="services" id="services">
+     <div class="services-heading">
+       <h2>Our Services & What We Offer</h2>
+     </div>
+     
+     <h3> Description </h3>
+     <div class="services-description">
+       <p>We provide the best fitness services to help you stay healthy, active and strong.</p>
+     </div>
+     
+     <h3>Example Services</h3>
+     <div class="services-cards">
+       
+       <h3>🏋️ Weight Training</h3>
+       <div class="services-card">
+         <p>Build strength and muscle with advanced weight training equipment.</p>
+       </div>
+       
+       <h3>🏃 Cardio Training</h3>
+       <div class="services-card">
+         <p>Improve stamina and burn calories with cardio workouts.</p>
+       </div>
+       
+       <h3>🧘 Yoga Classes</h3>
+       <div class="services-card">
+         <p>Relax your mind and improve flexibility with yoga sessions.</p>
+       </div>
+       
+       <h3>🥗 Diet Plans </h3>
+       <div class="services-card">
+         <p>Get personalized diet guidance for better fitness results.</p>
+       </div>
+       
+       <h3> 👨 Personal Training</h3>
+       <div class="services-card">
+         <p>Train under expert guidance with our certified trainers.</p>
+       </div>
+     </div>
+   </section>
+   
+   <section class="trainers" id="trainers">
+     <div class="trainers-heading">
+       <h2>Our Trainers</h2>
+     </div>
+     
+     <h3>Description</h3>
+     <div class="trainers-description">
+       <p>Our certified trainers are dedicated to helping you achieve your fitness goals with professional guidance and personalized workout plans.</p>
+     </div>
+     
+     <h2> Meet Our Experts </h2>
+     <div class="our-trainers">
+       <br>
+       <h3>🏋️ Strength Coach</h3>
+       <div class="trainer -example">
+         <div class="image">
+    <img src="#" alt="Strength Coach">
+         </div>
+         <p>Name: <b>Rohit Sharma</b>
+         <br>
+         <br>
+         Post: <b>Strength Coach</b>
+         <br>
+         <br>
+         Expert in muscle building and strength training with 5+ years of experience.
+         </p>
+       </div>
+       <br>
+       <h3>🏃 Cardio Specialist</h3>
+       <div class="trainer -example">
+         <div class="image">
+    <img src="#" alt="Cardio Specialist"
+         </div>
+         <p>Name: <b>Aman Verma</b>
+         <br>
+         <br>
+         Post: <b>Cardio Specialist</b>
+         <br>
+         <br>
+         Helps members improve stamina, endurance and overall fitness performance.
+         </p>
+       </div>
+       </div>
+       <br>
+       <h3>🧘 Yoga Trainer</h3>
+       <div class="trainer -example">
+         <div class="image">
+    <img src="#" alt="Yoga Trainer"
+         </div>
+         <p>Name: <b>Priya Mishra</b>
+         <br>
+         <br>
+         Post: <b>Yoga Trainer</b>
+         <br>
+         <br>
+        Professional yoga instructor focused on flexibility, balance and mental wellness.
+         </p>
+       </div>
+       </div>
+       <br>
+       
+       <h3>Trainer Short Description</h3>
+       <div class="trainer-short-desciption">
+         <p>Our experienced trainers provide expert guidance, motivation and personalized support to help every member achieve their fitness goals safely and effectively. From strength training to cardio and yoga, our team is committed to creating the best fitness experience for you.</p>
+       </div>
+     </div>
+   </section>
+   
+   <section class="gallery" id="gallery">
+
+  <h2 class="gallery-heading">Gym Gallery</h2>
+
+  <div class="gallery-container">
+
+    <img src="https://picsum.photos/600/400?1" alt="Gym Image">
+    
+    <img src="https://picsum.photos/600/400?2" alt="Gym Image">
+    
+    <img src="https://picsum.photos/600/400?3" alt="Gym Image">
+    
+    <img src="https://picsum.photos/600/400?4" alt="Gym Image">
+
+  </div>
+
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+
+  <span id="close-btn">&times;</span>
+
+  <img id="lightbox-img">
+
+</div>
+
+    <section class="contact" id="contact">
+      <div class="contact-heading">
+        <h2>Get In Touch</h2>
+      </div>
+      
+      <h2> Description </h2>
+      <div class="contact-description">
+      <p>Have questions or want to join our gym?
+      <br>
+  Contact us today and start your fitness journey.</p>
+      </div>
+      
+      <h2>Contact Info </h2>
+      <div class="contact-info">
+        <p>
+          <b>
+            <ul>
+   <li>📞 Phone Number: +91 9876543210</li>
+   <br>
+   <li>📧 Email: ironfitness@gmail.com</li>
+   <br>
+   <li>📍 Address: Lucknow, Uttar Pradesh, India</li>
+            </ul>
+          </b>
+        </p>
+      </div>
+      
+      <h2> Contact Form</h2>
+      <div class="contact-form">
+        <form class="contact-form">
+  <input type="text" placeholder="Enter your Name" required>
+  <br>
+  <input type="email" placeholder="Enter your email" required>
+  <br>
+  <input type="tel" placeholder="Enter the phone no." required>
+  <br>
+ <input type="date" placeholder="Enter today's date" required>
+ <br>
+ <input type="text" placeholder=" DAY " required>
+  <textarea placeholder="Your Message" required></textarea>
+      <br>
+     <br>
+      <button type="submit">
+    Send Message
+  </button>
+        </form>
+      </div>
+    </section>
+    
+    <section class="map" id="map">
+      <div class="map-heading">
+        <h2>Map</h2>
+      </div>
+      <div class="map-container">
+        <div class="map-description">
+  <p>
+   Visit our fitness center and experience a professional workout environment with modern equipment and expert trainers. We are always ready to help you achieve your fitness goals. 
+  </p> 
+  </div>
+        <div class="map-box">
+          <iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14235.490496171654!2d80.9462!3d26.8467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd991f5c63ff%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1716570000000!5m2!1sen!2sin"
+
+width="100%"
+height="400"
+style="border:0; border-radius:20px;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+        </div>
+      </div>
+    </section>
+    
+    <section class="footer" id="footer">
+      <div class="fopter-heading">
+        <h2> Footer </h2>
+      </div>
+      <div class="footer-sub-heading">
+        <h3>IRON FITNESS GYM</h3>
+      </div>
+      <div class="footer-description">
+        <p>Transform your body and achieve your fitness goals with us.</p>
+      </div>
+      <div class="quick-links">
+        <a href="#home"> HOME </a>
+        <a href="#about"> ABOUT US </a>
+        <a href="#membership"> MEMBERSHIPS </a>
+        <a href="#services"> SERVICES </a>
+        <a href="#trainers"> TRAINERS </a>
+        <a href="#gallery"> GALLERY </a>
+        <a href="#contact"> CONTACT US </a> 
+        <a href="map"> MAP </a>
+      </div>
+      <div class="footer-contact-info">
+        <p>
+          <b>
+            <ul>
+   <li>📞 Phone Number: +91 9876543210</li>
+   <br>
+   <li>📧 Email: ironfitness@gmail.com</li>
+   <br>
+   <li>📍 Address: Lucknow, Uttar Pradesh, India</li>
+            </ul>
+          </b>
+        </p>
+      </div>
+      <div class="footer-media">
+        <h4>Media icons</h4>
+      </div>
+      <div class="media-icons">
+        <a href="#">
+    <i class="fa-brands fa-instagram"></i>
+    </a>
+
+<a href="#">
+  <i class="fa-brands fa-facebook"></i>
+</a>
+
+<a href="#">
+  <i class="fa-brands fa-youtube"></i>
+</a>
+
+<a href="#">
+  <i class="fa-brands fa-x-twitter"></i>
+</a>
+      </div>
+      
+      <div class="copyright">
+        <p>© 2026 Iron Fitness Gym | All Rights Reserved
+        </p>
+      </div>
+    </section>
+    
+    
+    <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  // AOS ANIMATION
+AOS.init();
+
+
+// GALLERY LIGHTBOX
+
+const galleryImages =
+document.querySelectorAll(".gallery-container img");
+
+const lightbox =
+document.getElementById("lightbox");
+
+const lightboxImg =
+document.getElementById("lightbox-img");
+
+const closeBtn =
+document.getElementById("close-btn");
+
+galleryImages.forEach(function(image){
+
+  image.addEventListener("click", function(){
+
+    lightbox.style.display = "flex";
+
+    lightboxImg.src = this.src;
+
+  });
+
+});
+
+closeBtn.addEventListener("click", function(){
+
+  lightbox.style.display = "none";
+
+});
+
+lightbox.addEventListener("click", function(e){
+
+  if(e.target !== lightboxImg){
+
+    lightbox.style.display = "none";
+
+  }
+
+});
+</script>
+
+
+    
+   </body>
+  
+</html>
